@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/white"
+    android:id="@+id/container"
+    >
+
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="250dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/lojabragaimg"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <GridLayout
+        android:id="@+id/grid_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/image_logo"
+        android:background="@drawable/circle_yellow_button"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/ic_email" />
+
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="E-mail"
+            android:layout_marginRight="41dp"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/cinza"
+            android:textSize="17sp"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="315dp"
+            />
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/grid_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid_email"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/circle_yellow_button"
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/ic_lock"/>
+
+        <EditText
+            android:background="@android:color/transparent"
+            android:id="@+id/login_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/cinza"
+            android:textSize="17sp"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="403dp" />
+
+
+    </GridLayout>
+
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grid_senha"
+        android:layout_alignStart="@+id/grid_senha"
+        android:layout_alignEnd="@+id/grid_senha"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/layout_button"
+        android:onClick="login"
+        android:text="Entrar"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="483dp" />
+
+    <Button
+        android:id="@+id/button_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_login"
+        android:layout_alignStart="@+id/button_login"
+        android:layout_alignEnd="@+id/button_login"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/layout_button"
+        android:onClick="cadastro"
+        android:text="Cadastrar-se"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="571dp" />
+
+    <LinearLayout
+        android:id="@+id/linear_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_cadastro"
+        android:layout_alignStart="@+id/button_cadastro"
+        android:layout_alignEnd="@+id/button_cadastro"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/esqueceu_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esqueceu sua senha?"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/cinza"
+
+            />
+
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/linear_login"
+        android:layout_alignStart="@+id/linear_login"
+        android:layout_alignEnd="@+id/linear_login"
+        android:background="@drawable/layout_blue_button"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/facebook"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar com Facebook"
+            android:textColor="@android:color/white"
+            android:background="@color/blueApp"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            />
+
+    </GridLayout>
+
+
+</RelativeLayout>

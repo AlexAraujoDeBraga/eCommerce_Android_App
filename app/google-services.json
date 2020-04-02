@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "558250099402",
+    "firebase_url": "https://lojabraga-dbed0.firebaseio.com",
+    "project_id": "lojabraga-dbed0",
+    "storage_bucket": "lojabraga-dbed0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558250099402:android:b8c9725c3dfe80be9eea33",
+        "android_client_info": {
+          "package_name": "com.leklab.alex.lojabraga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558250099402-5v0omqh55ugf3e3r618eeg629p6ngt0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leklab.alex.lojabraga",
+            "certificate_hash": "26d1b45e71e1f4958406f9798e1c9e76bf7e1ae7"
+          }
+        },
+        {
+          "client_id": "558250099402-fm8n3o2q6crqt1i0dcp53e04e6pf33a9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhw6Pl65fE5HwVqVCgR3ovZ-jGyhbF7kA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558250099402-fm8n3o2q6crqt1i0dcp53e04e6pf33a9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
