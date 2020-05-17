@@ -56,10 +56,8 @@ public class MainActivity extends AppCompatActivity {
         esqueceuSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 esqueceuSenha.setVisibility(GONE);
-                 FragmentManager fragmentManager = getSupportFragmentManager();
-                 ResetPasswordFragment fragment = new ResetPasswordFragment();
-                 fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+                 Intent intentReset = new Intent(MainActivity.this, ResetPasswordActivity.class);
+                 startActivity(intentReset);
             }
         });
 
@@ -75,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     private void updateUI(FirebaseUser user) {
         if (user != null){
 
-            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            Intent intent = new Intent(MainActivity.this, NavigationActivity.class);
             startActivity(intent);
 
             progressBar.hide();
